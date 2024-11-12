@@ -1,11 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactDom from 'react-dom/client';
+import Header from "./Header";
+import Main from "./Main";
+import Footer from "./Footer";
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+function App(){
+    return(
+       <>
+       <Header />
+       <Main />
+       <Footer />
+       </>
+    )
+}
 
 const root = ReactDom.createRoot(document.getElementById("root"));
-
 root.render(
-    <>
-    <h1>hello from index.js</h1>
-    <h3>update success !</h3>
-    </>
+    <App />
 )
